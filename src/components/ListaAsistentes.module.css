@@ -1,0 +1,81 @@
+/* src/components/ListaAsistentes.module.css */
+
+/* Contenedor Principal (Dashboard) */
+.dashboard {
+    max-width: 400px;
+    margin: 50px auto 0;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    
+    /* EFECTO CRISTAL */
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4); 
+    border-radius: 10px; 
+}
+
+/* Título superior (Registros de Asistencia) */
+.titulo {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4dc5d9; /* Tono turquesa para destacar */
+}
+
+/* Tarjeta del Contador */
+.contadorCard {
+    background-color: rgba(255, 255, 255, 0.05); /* Cristal sutil dentro del cristal */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 240, 0.1);
+}
+
+.total {
+    font-size: 60px;
+    font-weight: bold;
+    color: #28a745; /* Verde para el número total */
+    line-height: 1;
+}
+
+.subtitulo {
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 5px;
+}
+
+/* Sección de la Lista */
+.seccionLista {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.encabezadoLista {
+    font-size: 14px;
+    color: #4dc5d9; /* Tono turquesa */
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4dc5d9;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.itemLista {
+    padding: 10px 0;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: #ededed;
+}
+
+.itemLista:last-child {
+    border-bottom: none;
+}

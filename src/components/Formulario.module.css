@@ -1,0 +1,125 @@
+/* src/components/Formulario.module.css */
+
+/* Contenedor Principal (Limpio) */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; /* Quitar padding si la página ya lo tiene */
+    min-height: 100vh;
+    background-color: transparent; /* Permitir que el fondo global se vea */
+    color: #171717; /* Texto negro */
+    font-family: var(--font-sans), sans-serif; /* Fuente profesional */
+    max-width: 440px; /* Ancho consistente */
+    margin: 0 auto;
+}
+
+/* Contenedor del Formulario (Tarjeta Blanca y Sombra Suave) */
+.form {
+    width: 100%;
+    max-width: 440px;
+    padding: 35px;
+    
+    /* Diseño Minimalista CLARO */
+    background-color: #ffffff; /* Fondo Blanco Puro */
+    border: none; /* Sin borde para look minimalista */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); /* Sombra suave y profesional */
+    border-radius: 12px;
+    margin-top: 30px;
+    color: #171717; /* Texto negro */
+    
+    /* Eliminamos el backdrop-filter (efecto cristal) */
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600; /* Seminegrita */
+    font-size: 14px;
+    color: #343a40; /* Negro suave/oscuro */
+}
+
+/* Campo de Input */
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e9ecef; /* Borde muy sutil */
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #f8f9fa; /* Fondo del input gris claro */
+    color: #171717;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input:focus {
+    border-color: #007bff; /* Borde Celeste al enfocar */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Botón Principal (Celeste Brillante) */
+.button {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff; /* Celeste brillante */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+.button:hover:not(:disabled) {
+    background-color: #0056b3; /* Celeste más oscuro al pasar */
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.5);
+}
+
+.button:disabled {
+    background-color: #a7c5e0; /* Celeste claro para deshabilitado */
+    cursor: not-allowed;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Estilos de Mensajes (Ajustados para Fondo Blanco) */
+.mensaje {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    border-radius: 8px; /* Ligeramente más redondeado */
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    max-width: 440px;
+}
+
+.mensajeExito {
+    composes: mensaje;
+    background-color: #28A745; 
+    color: white; /* Texto blanco en verde */
+}
+
+.mensajeError {
+    composes: mensaje;
+    background-color: #DC3545; 
+    color: white; /* Texto blanco en rojo */
+}
+
+.mensajeInfo {
+    composes: mensaje;
+    background-color: #007bff; /* Usamos el Celeste primario */
+    color: white; 
+}
+
+.mensajeAdvertencia {
+    composes: mensaje;
+    background-color: #FFC107; 
+    color: #171717; /* Texto negro en amarillo/naranja */
+}
