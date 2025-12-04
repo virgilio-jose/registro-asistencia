@@ -88,7 +88,7 @@ export async function POST(request) {
                         <li> Hora: 6:00 p.m. a 8:00 p.m.</li>
                         <li> Lugar: UTP - Centro Regional de Azuero</li>
                         <li> Conferencista: Licenciado Jorge Isaac García </li>
-                        <li> Conferencista: Ingeniero Francisco Aguilar </li>
+                        <li> Conferencista: Ingeniero Francisco Aguilar (SACSA) </li>
                     </ul>
                 </div>
 
