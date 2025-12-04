@@ -94,9 +94,7 @@ export async function POST(request) {
 
                 <p style="margin-top: 25px;">Agradecemos tu interés. Esperamos que disfrutes de la jornada.</p>
 
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0FssiTtrTaBNCqIq7pnT4vIb_eMqSFGk3SsJCuKdEfIpX6A/viewform" class="button" style="color: white; text-decoration: none;">
-                    ¡Danos tu Opinión!
-                </a>
+                
             </div>
 
             <div class="footer">
