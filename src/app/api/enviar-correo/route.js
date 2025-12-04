@@ -13,9 +13,9 @@ export async function POST(request) {
       return NextResponse.json({ error: "Datos incompletos" }, { status: 400 });
     }
 
-    //La dirección 'from' DEBE ser una dirección verificada en Resend
+    //La dirección 'from' DEBE ser una dirección verificada en Resend soporte@registro-asistencia.online
     const data = await resend.emails.send({
-      from: 'Transformación Digital <soporte@registro-asistencia.online>', 
+      from: 'Transformación Digital <floresvirgilio210@gmail.com>', 
       to: [correo],
       subject: `¡Bienvenido(a) ${nombre}, tu asistencia ha sido confirmada!`,
       html: 
