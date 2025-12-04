@@ -15,7 +15,7 @@ export async function POST(request) {
 
     //La dirección 'from' DEBE ser una dirección verificada en Resend soporte@registro-asistencia.online
     const data = await resend.emails.send({
-      from: 'Transformación Digital <floresvirgilio210@gmail.com>', 
+      from: 'Transformación Digital <soporte@registro-asistencia.online>', 
       to: [correo],
       subject: `¡Bienvenido(a) ${nombre}, tu asistencia ha sido confirmada!`,
       html: 
