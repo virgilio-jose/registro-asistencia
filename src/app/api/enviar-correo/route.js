@@ -87,7 +87,8 @@ export async function POST(request) {
                         <li> Fecha: Jueves, 4 de diciembre de 2025</li>
                         <li> Hora: 6:00 p.m. a 8:00 p.m.</li>
                         <li> Lugar: UTP - Centro Regional de Azuero</li>
-  
+                        <li> Conferencista: Licenciado Jorge Isaac García </li>
+                        <li> Conferencista: Ingeniero Francisco Aguilar </li>
                     </ul>
                 </div>
 
